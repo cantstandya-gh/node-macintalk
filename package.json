@@ -1,0 +1,48 @@
+{
+    "name": "node-macintalk",
+    "version": "1.0.0",
+    "description": "A macOS-only wrapper for the 'say' command to synthesize speech and list Apple system voices.",
+    "dependencies": {
+        "child_process": "^1.0.2",
+        "crypto": "^1.0.1",
+        "fs": "^0.0.1-security",
+        "os": "^0.1.2",
+        "path": "^0.12.7"
+    },
+    "main": "index.js",
+    "exports": {
+      ".": "./index.js"
+    },
+    "type": "commonjs",
+    "scripts": {
+      "test": "node test.js"
+    },
+    "keywords": [
+      "tts",
+      "text-to-speech",
+      "macos",
+      "say",
+      "speech",
+      "voice",
+      "apple",
+      "aiff"
+    ],
+    "author": "Art Vandelay",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/cantstandya-gh/node-macintalk.git"
+    },
+    "engines": {
+      "node": ">=14",
+      "npm": ">=6"
+    },
+    "os": [
+      "darwin"
+    ],
+    "files": [
+      "index.js",
+      "tempfile.js",
+      "data.gen.js"
+    ]
+  }
