@@ -64,10 +64,7 @@ class MacinTalk {
         gender,
         language: lang.split("_")[0],
         country: lang.split("_")[1],
-        lang,
-        channels: 1,
-        sampleRate: 44100,
-        bitDepth: 16,
+        lang
       };
     }
 
@@ -80,7 +77,6 @@ class MacinTalk {
   
       const tempOut = outPath || createTempFile();
       const args = ["-v", this._voice, "-o", tempOut, this._text];
-  
       const proc = spawn("say", args);
   
       let stderr = "";
